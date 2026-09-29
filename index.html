@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Una pequeña sorpresa para ti 💗</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="hearts" aria-hidden="true"></div>
+
+  <main class="app">
+    <section class="intro" id="intro">
+      <div class="envelope-icon">💌</div>
+      <p class="eyebrow">PARA TI</p>
+      <h1>Antes de abrir tu carta...</h1>
+      <p class="intro-text">
+        Hay algunas palabras esperando encontrarse.<br>
+        Relaciona cada una con la opción que le corresponde.
+      </p>
+      <button class="primary-btn" id="startBtn">Comenzar ✨</button>
+    </section>
+
+    <section class="game hidden" id="game">
+      <div class="game-header">
+        <p class="eyebrow">NUESTRO PEQUEÑO JUEGO</p>
+        <h2>Encuentra todas las parejas 💞</h2>
+        <p id="progressText">0 de 8 parejas encontradas</p>
+        <div class="progress-bar">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+      </div>
+
+      <div class="matching-area">
+        <div class="column" id="leftColumn">
+          <h3>Palabras</h3>
+          <div class="cards-list" id="leftCards"></div>
+        </div>
+
+        <div class="column" id="rightColumn">
+          <h3>Lo que significan para mí</h3>
+          <div class="cards-list" id="rightCards"></div>
+        </div>
+      </div>
+
+      <p class="hint" id="hint">
+        Toca una tarjeta de cada lado para intentar formar una pareja.
+      </p>
+    </section>
+
+    <section class="letter hidden" id="letter">
+      <div class="confetti" id="confetti"></div>
+
+      <div class="letter-card">
+        <div class="wax-seal">♥</div>
+        <p class="eyebrow">UNA CARTA PARA TI</p>
+        <h2 id="letterTitle">Para el amor de mi vida</h2>
+
+        <div class="letter-body" id="letterBody"></div>
+
+        <p class="signature" id="letterSignature">Con todo mi amor,<br>Tu persona favorita 💗</p>
+
+        <button class="secondary-btn" id="replayBtn">Volver a jugar ↻</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
